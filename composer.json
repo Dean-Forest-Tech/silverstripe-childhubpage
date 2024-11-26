@@ -24,11 +24,6 @@
     "require": {
         "silverstripe/cms": "^4 || ^5"
     },
-    "extra": {
-        "expose": [
-            "client/dist"
-        ]
-    },
     "autoload": {
         "psr-4": {
             "DFT\\SilverStripe\\ChildHubPage\\": "src/"

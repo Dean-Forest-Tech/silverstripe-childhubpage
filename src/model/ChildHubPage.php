@@ -13,14 +13,8 @@ class ChildHubPage extends Page
 {
     private static $table_name = 'ChildHubPage';
 
-    /**
-     * @var string
-     */
-    private static $icon = "resources/dft/silverstripe-childhubpage/client/dist/img/grid.png";
+    private static $icon_class = 'font-icon-sitemap';
 
-    /**
-     * @var string
-     */
     private static $description = 'Display all children of this page as either a list or grid';
 
     private static $db = [
