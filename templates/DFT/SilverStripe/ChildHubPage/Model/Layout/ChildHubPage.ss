@@ -13,17 +13,17 @@
             <% if $ShowChildrenAs == "Grid" %>
                 <div class="line row units-row child-list">
                     <% loop $PaginatedChildren %>
-                        <% include ilateral\\SilverStripe\\ChildHubPage\\ChildHubGridItem AddLineEnd=true %>
+                        <% include DFT\\SilverStripe\\ChildHubPage\\ChildHubGridItem AddLineEnd=true %>
                     <% end_loop %>
                 </div>
             <% else %>
                 <% loop $PaginatedChildren %>
-                    <% include ilateral\\SilverStripe\\ChildHubPage\\ChildHubListItem %>
+                    <% include DFT\\SilverStripe\\ChildHubPage\\ChildHubListItem %>
                 <% end_loop %>
             <% end_if %>
         </div>
         <% with $PaginatedChildren %>
-            <% include ilateral\\SilverStripe\\ChildHubPage\\Pagination %>
+            <% include DFT\\SilverStripe\\ChildHubPage\\Pagination %>
         <% end_with %>
     <% end_if %>
     

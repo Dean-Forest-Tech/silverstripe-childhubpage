@@ -3,5 +3,5 @@ Name: childhubpagelegacy
 ---
 SilverStripe\ORM\DatabaseAdmin:
   classname_value_remapping:
-    ChildHubPage: ilateral\SilverStripe\ChildHubPage\Model\ChildHubPage
+    ChildHubPage: DFT\SilverStripe\ChildHubPage\Model\ChildHubPage
     ilateral\SilverStripe\ChildHubPage\Model\ChildHubPage: DFT\SilverStripe\ChildHubPage\Model\ChildHubPage
