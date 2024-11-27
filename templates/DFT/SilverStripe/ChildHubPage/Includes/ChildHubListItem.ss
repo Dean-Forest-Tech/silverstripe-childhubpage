@@ -1,9 +1,9 @@
 <div class="line row child child-{$Pos}">
     <% if $FeaturedImage.exists %>
-        <div class="unit size1of3 col-md-4">
+        <div class="unit size1of3 col-mb-4md-4">
             <p>
                 <a href="{$Link}">
-					<img src="$FeaturedImage.Fill(330,330).URL" alt="$FeaturedImage.Title" class="rounded img-responsive img-fluid">
+					<img src="$FeaturedImage.Fill(300,200).URL" alt="$FeaturedImage.Title" class="rounded img-responsive img-fluid">
                 </a>
             </p>
         </div>

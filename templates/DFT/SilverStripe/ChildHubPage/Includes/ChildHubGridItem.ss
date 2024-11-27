@@ -1,4 +1,4 @@
-<div class="unit size1of3 unit-33 col-md-4 child $EvenOdd child-{$Pos}">
+<div class="unit size1of3 unit-33 mb-4 col-12 col-sm-6 col-lg-4 $EvenOdd child child-{$Pos}">
     <h2>
         <a href="{$Link}">{$Title}</a>
     </h2>
@@ -13,12 +13,12 @@
 	<p>$Content.FirstParagraph</p>
     
     <p>
-        <a class="btn btn-primary" href="{$Link}">
-            <%t ChildHubPage.More "More" %>
+        <a class="btn btn-primary w-100" href="{$Link}">
+            <%t ChildHubPage.MoreInfo "More {title} Info" title=$Title %>
         </a>
     </p>
 </div>
 
 <% if $AddLineEnd == 'true' && $MultipleOf(3) && not $Last %>
-</div><div class="line row units-row child-list">
+</div><div class="line units-row row child-list">
 <% end_if %>
