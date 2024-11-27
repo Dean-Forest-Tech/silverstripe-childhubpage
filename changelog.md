@@ -40,3 +40,4 @@ SS4 updates to add:
 
 * Migrate to DFT
 * Add SS5 support
+* Change list view to alternating thumbnail left and right

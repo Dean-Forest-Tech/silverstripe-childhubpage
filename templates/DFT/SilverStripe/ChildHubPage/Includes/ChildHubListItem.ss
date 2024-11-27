@@ -1,6 +1,6 @@
-<div class="line row child child-{$Pos}">
+<div class="line row mb-4 child child-{$Pos}">
     <% if $FeaturedImage.exists %>
-        <div class="unit size1of3 col-mb-4md-4">
+        <div class="unit size1of3 col-mb-4 <% if $Even %>order-12<% end_if %>">
             <p>
                 <a href="{$Link}">
 					<img src="$FeaturedImage.Fill(300,200).URL" alt="$FeaturedImage.Title" class="rounded img-responsive img-fluid">
@@ -17,8 +17,8 @@
         <p>$Content.FirstParagraph</p>
         
         <p>
-            <a class="btn btn-primary" href="{$Link}"> 
-                <%t ChildHubPage.More "More" %>
+            <a href="{$Link}">
+                <%t ChildHubPage.MoreInfo "More {title} Info" title=$Title %>
             </a>
         </p>
     </div>
