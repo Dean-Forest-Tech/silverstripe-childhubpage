@@ -1,13 +1,14 @@
 <?php
 
-namespace DFT\SilverStripe\ChildHubPage\Model;
+namespace DFT\SilverStripe\ChildHubPage;
 
 use SilverStripe\ORM\PaginatedList;
 use PageController;
 
-class ChildHubPage_Controller extends PageController
+class ChildHubPageController extends PageController
 {
-    public function PaginatedChildren($limit = 9) {
+    public function getPaginatedChildren($limit = 9)
+    {
         $list = $this->AllChildren();
 
         $pages =  new PaginatedList($list, $this->getRequest());

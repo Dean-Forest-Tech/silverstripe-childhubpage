@@ -1,6 +1,6 @@
 <?php
 
-namespace DFT\SilverStripe\ChildHubPage\Model;
+namespace DFT\SilverStripe\ChildHubPage;
 
 use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\CheckboxField;
